@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: pokemon-auction-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7214794584:AAFUMB4PuRI6nrkf8Z2TFPCmlFBplaefkbE
+      - key: MONGO_URL
+        value: mongodb+srv://luffy:naruto@cluster0.f7rcnqv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - key: APPROVE_GROUP_ID
+        value: -1002543449767
+      - key: AUCTION_GROUP_ID
+        value: -1004724930766
