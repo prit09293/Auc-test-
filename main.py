@@ -1,3 +1,4 @@
+import os
 from pyrogram import Client
 from handlers import auction, bidding, seller, admin, broadcast
 
