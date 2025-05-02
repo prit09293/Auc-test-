@@ -3,8 +3,8 @@ from pyrogram import Client
 from handlers import auction, bidding, seller, admin, broadcast
 
 app = Client(
-    "pokemon_bot",
-    bot_token=os.getenv("API_TOKEN"),
+    "pokemon_auction_bot",
+    bot_token=os.getenv("BOT_TOKEN"),
     api_id=int(os.getenv("API_ID")),
     api_hash=os.getenv("API_HASH")
 )
